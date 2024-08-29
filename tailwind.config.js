@@ -4,26 +4,25 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  plugins: [
-    require("autoprefixer"), 
-  ],
+  plugins: [require("autoprefixer")],
   theme: {
     extend: {
       fontFamily: {
-        'rw': ['Raleway', 'sans-serif'],
-        'ms': ['Montserrat', 'sans-serif'],
+        rw: ["Raleway", "sans-serif"],
+        ms: ["Montserrat", "sans-serif"],
       },
       colors: {
-        'primary': '#2B4E8C ',
+        primary: "#2B4E8C ",
+        secondary: "#e5e7eb",
       },
       boxShadow: {
-        'custom': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+        custom: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       },
       screens: {
-        'ls': '320px',
-        'xls': '450px',
-        'xxl': '1400px'
-      }
+        ls: "320px",
+        xls: "450px",
+        xxl: "1400px",
+      },
     },
   },
-}
+};

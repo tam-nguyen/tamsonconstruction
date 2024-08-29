@@ -8,16 +8,13 @@ import {
   Reviews,
 } from "@components";
 
-const Home = () => {
+const ContactPage = () => {
   return (
-    <Layout title="Get your everyday work done">
+    <Layout title="Contact north handyman services">
       <Hero />
-      <Services />
-      <FAQs />
       <Contact />
-      <Reviews />
     </Layout>
   );
 };
 
-export default Home;
+export default ContactPage;
