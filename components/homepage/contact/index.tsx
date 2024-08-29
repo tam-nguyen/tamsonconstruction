@@ -23,7 +23,7 @@ const Contact = () => {
               </h5>
               <a href="tel:+351-965-990-000" className="text-gray-400 lg:ml-3">
                 {" "}
-                206-715-3084{" "}
+                360-504-6147{" "}
               </a>
             </div>
 

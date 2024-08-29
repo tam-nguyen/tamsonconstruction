@@ -18,7 +18,7 @@ const Footer = () => {
     {
       heading: "Contacts",
       links: [
-        { name: "206-715-3084", url: "tel:+1206-715-3084" },
+        { name: "360-504-6147", url: "tel:+13605046147" },
         {
           name: "info@tamsonconstruction",
           url: "mailto:info@tamsonconstruction",
@@ -29,17 +29,11 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="xl:max-w-6xl m-auto px-4 sm:px-8 xl:px-0 flex flex-col py-4 space-y-6 overflow-hidden">
-        <div className="flex justify-between flex-wrap gap-3">
-          <div className="space-y-3 w-[350px] text-gray-400 font-normal">
+      <div className="m-auto flex flex-col space-y-6 overflow-hidden px-4 py-4 sm:px-8 xl:max-w-6xl xl:px-0">
+        <div className="flex flex-wrap justify-between gap-3">
+          <div className="w-[350px] space-y-3 font-normal text-gray-400">
             <Link href="/">
-              <Image
-                src={logo}
-                alt="logo"
-                width={75}
-                height={60}
-                priority
-              />
+              <Image src={logo} alt="logo" width={75} height={60} priority />
             </Link>
 
             <p> Make your to-do list wherever you are with our mobile app. </p>
@@ -47,10 +41,8 @@ const Footer = () => {
           </div>
 
           {linkArr.map(({ heading, links }) => (
-            <div
-              className="flex flex-col space-y-1"
-              key={heading}>
-              <h5 className="text-primary font-bold text-[18px] mb-1">
+            <div className="flex flex-col space-y-1" key={heading}>
+              <h5 className="mb-1 text-[18px] font-bold text-primary">
                 {" "}
                 {heading}{" "}
               </h5>
@@ -58,7 +50,8 @@ const Footer = () => {
                 <Link
                   href={url}
                   key={name}
-                  className="text-gray-400 font-normal">
+                  className="font-normal text-gray-400"
+                >
                   {" "}
                   {name}{" "}
                 </Link>
@@ -66,18 +59,18 @@ const Footer = () => {
             </div>
           ))}
 
-          <div className="flex flex-col space-x-1 w-[250px]">
-            <h5 className="text-primary font-bold text-[18px] mb-1"> Hours </h5>
-            <p className="text-gray-400 font-normal mb-1">
+          <div className="flex w-[250px] flex-col space-x-1">
+            <h5 className="mb-1 text-[18px] font-bold text-primary"> Hours </h5>
+            <p className="mb-1 font-normal text-gray-400">
               {" "}
-              Monday - Sunday <br /> 9:00AM - 6:00PM
+              Monday - Sat <br /> 8:00AM - 4:00PM
             </p>
           </div>
         </div>
 
-        <p className="text-center mx-auto mt-5 font-semibold text-gray-400">
+        <p className="mx-auto mt-5 text-center font-semibold text-gray-400">
           @2017-2024 All Rights Reserved | TamSon Construction, LLC | Lynnwood,
-          WA, 98087 | 206-7153084 | Privacy Policy
+          WA, 98087 | 360-504-6147 | Privacy Policy
         </p>
       </div>
     </footer>
