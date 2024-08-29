@@ -1,37 +1,51 @@
-import { contact } from "@public"
-import Heading from "components/heading"
-import Image from "next/image"
-import FormComponent from "./form"
-import { FiPhone } from "react-icons/fi"
+import { contact } from "@public";
+import Heading from "components/heading";
+import Image from "next/image";
+import FormComponent from "./form";
+import { FiPhone } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className='space-y-5 layout'>
-      <Heading text='Contacts' heading='Contact us' />
+    <div className="layout space-y-5">
+      <Heading text="Contacts" heading="" />
 
-      <div className="shadow-custom md:flex justify-between space-y-5 md:space-y-0 rounded-lg p-2 ls:p-4 lg:p-8 w-[400px] md:w-[800px] max-w-full mx-auto">
-        <div className="flex flex-col justify-center items-center md:justify-between space-y-2 w-fit m-auto md:m-0">
-          <div className="h-[235px] w-[235px] xls:w-[280px] xls:h-[280px] relative">
-            <Image src={contact} alt='contact us' fill priority />
+      <div className="mx-auto w-[400px] max-w-full justify-between space-y-5 rounded-lg p-2 shadow-custom ls:p-4 md:flex md:w-[800px] md:space-y-0 lg:p-8">
+        <div className="m-auto flex w-fit flex-col items-center justify-center space-y-2 md:m-0 md:justify-between">
+          <div className="relative h-[235px] w-[235px] xls:h-[280px] xls:w-[280px]">
+            <Image src={contact} alt="contact us" fill priority />
           </div>
 
-          <div className="xls:flex justify-between space-x-3 xl:w-[365px]">
-            <div className='flex flex-col justify-center items-center'>
-              <h5 className='font-semibold flex items-center text-[18px]'> <FiPhone className='mr-2' /> Call us </h5>
-              <a href='tel:+351-965-990-000' className='lg:ml-3 text-gray-400'> +351-965-990-000 </a>
-            </div>
-            
-            <div className='flex flex-col justify-center items-center mt-5 xls:mt-0'>
-              <h5 className='font-semibold text-[18px]'> <span className='font-extrabold'> @ </span> Our email </h5>
-              <a href='mailto:helpyou@gmail.com' className='lg:ml-3 text-gray-400'> @helpyou@gmail.com </a>
+          <div className="justify-between space-x-3 xls:flex xl:w-[365px]">
+            <div className="flex flex-col items-center justify-center">
+              <h5 className="flex items-center text-[18px] font-semibold">
+                {" "}
+                <FiPhone className="mr-2" /> Call us{" "}
+              </h5>
+              <a href="tel:+351-965-990-000" className="text-gray-400 lg:ml-3">
+                {" "}
+                206-715-3084{" "}
+              </a>
             </div>
 
+            <div className="mt-5 flex flex-col items-center justify-center xls:mt-0">
+              <h5 className="text-[18px] font-semibold">
+                {" "}
+                <span className="font-extrabold"> @ </span> Our email{" "}
+              </h5>
+              <a
+                href="mailto:helpyou@gmail.com"
+                className="text-gray-400 lg:ml-3"
+              >
+                {" "}
+                tamsonconstruction.com{" "}
+              </a>
+            </div>
           </div>
         </div>
 
         <FormComponent />
       </div>
     </div>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;
