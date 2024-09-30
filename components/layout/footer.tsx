@@ -9,19 +9,19 @@ const Footer = () => {
       heading: "About us",
       links: [
         { name: "Frequently asked questions", url: "/" },
-        { name: "Confidentiality policy", url: "/" },
-        { name: "Contact", url: "/" },
-        { name: "Blog", url: "/" },
+        // { name: "Confidentiality policy", url: "/" },
+        // { name: "Contact", url: "/" },
+        // { name: "Blog", url: "/" },
       ],
     },
 
     {
       heading: "Contacts",
       links: [
-        { name: "360-504-6147", url: "tel:+13605046147" },
+        { name: "(360) 504-6147", url: "tel:+13605046147" },
         {
-          name: "info@tamsonconstruction",
-          url: "mailto:info@tamsonconstruction",
+          name: "tamsonconstruction@gmail.com",
+          url: "mailto:tamsonconstruction@gmail.com",
         },
       ],
     },
@@ -32,12 +32,18 @@ const Footer = () => {
       <div className="m-auto flex flex-col space-y-6 overflow-hidden px-4 py-4 sm:px-8 xl:max-w-6xl xl:px-0">
         <div className="flex flex-wrap justify-between gap-3">
           <div className="w-[350px] space-y-3 font-normal text-gray-400">
-            <Link href="/">
+            {/* <Link href="/">
               <Image src={logo} alt="logo" width={75} height={60} priority />
-            </Link>
+            </Link> */}
 
-            <p> Make your to-do list wherever you are with our mobile app. </p>
-            <p> ©2023. All rights reserved. </p>
+            <h6>
+              Our Services area: SEATTLE - EVERETT - MUKILTEO - LAKE STEVENS -
+              SNOHOMISH - BOTHELL - KIRKLAND - WOODINVILLE - BELLEVUE - MERCER
+              ISLAND{" "}
+            </h6>
+
+            {/* <p> Everyday work is important. I can help. </p>
+            <p> ©2024. All rights reserved. </p> */}
           </div>
 
           {linkArr.map(({ heading, links }) => (
@@ -69,8 +75,8 @@ const Footer = () => {
         </div>
 
         <p className="mx-auto mt-5 text-center font-semibold text-gray-400">
-          @2017-2024 All Rights Reserved | TamSon Construction, LLC | Lynnwood,
-          WA, 98087 | 360-504-6147 | Privacy Policy
+          @2024 All Rights Reserved | TamSon Construction, LLC | Lynnwood, WA,
+          98087 | (360) 504-6147 | Privacy Policy
         </p>
       </div>
     </footer>
