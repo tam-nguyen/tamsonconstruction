@@ -10,8 +10,7 @@ import {
 
 const ContactPage = () => {
   return (
-    <Layout title="Contact north handyman services">
-      <Hero />
+    <Layout title="Contact Seattle handyman services">
       <Contact />
     </Layout>
   );

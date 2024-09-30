@@ -23,7 +23,7 @@ const Contact = () => {
               </h5>
               <a href="tel:+351-965-990-000" className="text-gray-400 lg:ml-3">
                 {" "}
-                360-504-6147{" "}
+                (360) 504-6147{" "}
               </a>
             </div>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                 className="text-gray-400 lg:ml-3"
               >
                 {" "}
-                tamsonconstruction.com{" "}
+                tamsonconstruction@gmail.com{" "}
               </a>
             </div>
           </div>

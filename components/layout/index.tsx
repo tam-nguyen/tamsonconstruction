@@ -5,7 +5,7 @@ import { LayoutProps } from "@types";
 
 const Layout: React.FC<LayoutProps> = ({ title, children }) => {
   return (
-    <div className="bg-[#fefefe] w-full mx-auto">
+    <div className="mx-auto mt-4 w-full bg-[#fefefe]">
       <Head>
         <title>{`${title} - Help`}</title>
         <meta name="desciption" content="Get your everyday work done" />

@@ -15,7 +15,6 @@ const Home = () => {
       <Services />
       <FAQs />
       <Contact />
-      <Reviews />
     </Layout>
   );
 };
