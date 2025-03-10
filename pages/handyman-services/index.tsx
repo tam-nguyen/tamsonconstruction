@@ -8,13 +8,12 @@ import {
   Reviews,
 } from "@components";
 
-const ContactPage = () => {
+const HandyManServices = () => {
   return (
     <Layout title="Contact Seattle handyman services">
-      <h1>Contact us</h1>
-      <Contact />
+      <h1>HandyManServices</h1>
     </Layout>
   );
 };
 
-export default ContactPage;
+export default HandyManServices;

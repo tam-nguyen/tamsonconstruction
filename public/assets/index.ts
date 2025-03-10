@@ -24,8 +24,20 @@ import mike from "./reviews/mike.jpg";
 import tamsonlogo from "./tamsonlogo.png";
 import tamnguyenhero from "./tamnguyenhero.jpg";
 import tamsonconstructionhero from "./tamsonconstructionhero.jpg";
+import fenceGate1A from "./gallery/fence-gate-1-a.jpeg";
+import fenceGate1B from "./gallery/fence-gate-1-b.jpeg";
+import fence2b from "./gallery/fence-2-b.jpeg";
+import fence2a from "./gallery/fence-2-a.jpeg";
+import fence3a from "./gallery/fence-3-a.jpeg";
+import fence3b from "./gallery/fence-3-b.jpeg";
 
 export {
+  fence3a,
+  fence3b,
+  fence2a,
+  fence2b,
+  fenceGate1A,
+  fenceGate1B,
   logo,
   tamsonlogo,
   tamsonconstructionhero,
