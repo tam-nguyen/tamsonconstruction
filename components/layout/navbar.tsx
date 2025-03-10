@@ -13,20 +13,20 @@ const Navbar = () => {
   const navLinks = [
     { route: "/", title: "Home", isActive: router.route === "/" },
     {
+      route: "/handyman-services",
+      title: "Handyman Services",
+      isActive: router.route === "/handyman-services",
+    },
+    {
+      route: "/gallery",
+      title: "Gallery",
+      isActive: router.route === "/gallery",
+    },
+    {
       route: "/contact",
       title: "Contact",
       isActive: router.route === "/contact",
     },
-    // {
-    //   route: "/",
-    //   title: "Confidentiality policy",
-    //   isActive: router.route === "/policy",
-    // },
-    // {
-    //   route: "/about-us",
-    //   title: "About us",
-    //   isActive: router.route === "/about",
-    // },
     // { route: "/blog", title: "Blog", isActive: router.route === "/blog" },
   ];
 

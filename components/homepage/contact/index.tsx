@@ -17,10 +17,6 @@ const Contact = () => {
 
           <div className="justify-between space-x-3 xls:flex xl:w-[365px]">
             <div className="flex flex-col items-center justify-center">
-              <h5 className="flex items-center text-[18px] font-semibold">
-                {" "}
-                <FiPhone className="mr-2" /> Call us{" "}
-              </h5>
               <a href="tel:+351-965-990-000" className="text-gray-400 lg:ml-3">
                 {" "}
                 (360) 504-6147{" "}
@@ -28,10 +24,6 @@ const Contact = () => {
             </div>
 
             <div className="mt-5 flex flex-col items-center justify-center xls:mt-0">
-              <h5 className="text-[18px] font-semibold">
-                {" "}
-                <span className="font-extrabold"> @ </span> Our email{" "}
-              </h5>
               <a
                 href="mailto:helpyou@gmail.com"
                 className="text-gray-400 lg:ml-3"
