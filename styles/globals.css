@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,20 +6,26 @@
 
 @layer components {
   .layout {
-    @apply xl:max-w-6xl m-auto px-3 sm:px-8 xl:px-0
+    @apply m-auto px-3 sm:px-8 xl:max-w-6xl xl:px-0;
   }
 
   .navLinkActive {
-    @apply after:content-[''] after:block after:h-[2px] after:w-[20px] after:bg-black after:absolute after:-bottom-2 after:left-[50%] after:-translate-x-[50%]
+    @apply after:absolute after:-bottom-2 after:left-[50%] after:block after:h-[2px] after:w-[20px] after:-translate-x-[50%] after:bg-black after:content-[''];
   }
+}
+
+.lightGalleryStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -38,10 +44,10 @@ a {
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background: white !important;
-  border: 1px solid #03C3DE !important;
+  border: 1px solid #03c3de !important;
   opacity: 1;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #03C3DE !important;
+  background: #03c3de !important;
 }
