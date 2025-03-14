@@ -22,21 +22,13 @@ import {
 import Image from "next/image";
 
 import LightGallery from "lightgallery/react";
-
-import "../../styles/globals.css";
-
-// import styles
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
-
-// If you want you can use SCSS instead of css
-import "lightgallery/scss/lightgallery.scss";
-import "lightgallery/scss/lg-zoom.scss";
-
 import lgZoom from "lightgallery/plugins/zoom";
 import lgShare from "lightgallery/plugins/share";
 import lgHash from "lightgallery/plugins/hash";
+
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
 
 const ImageData = [
   {
